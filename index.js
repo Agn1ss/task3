@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 function gcd(a, b) {
     a = BigInt(a);
@@ -35,5 +35,5 @@ app.get('/iggolnik_gmail_com', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}/iggolnik_gmail_com`);
+    console.log(`Server running at ${port}`);
 });
