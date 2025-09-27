@@ -18,7 +18,7 @@ function isNaturalNumber(str) {
     return /^[1-9]\d*$/.test(str);
 }
 
-app.get('/', (req, res) => {
+app.get('/iggolnik_gmail_com', (req, res) => {
     const xStr = req.query.x;
     const yStr = req.query.y;
     
@@ -35,5 +35,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}/iggolnik_gmail_com`);
 });
